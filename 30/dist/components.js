@@ -1,0 +1,1 @@
+new Set([...document.body.getElementsByTagName("*")].map((a=>{if(a.tagName&&a.tagName.toLowerCase().startsWith("vp-"))return a.tagName.toLowerCase()})).filter(Boolean)).forEach((async a=>{await import(`./${a}.js`)}));
